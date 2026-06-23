@@ -28,3 +28,7 @@ With all that said and done, what ~~does~~ do I plan for nosns to do:
 
 nosns uses Zig as its primary programming language. Check `build.zig.zon` for
 the version used in development.
+
+I also have some useful git hooks for automatically formatting the source files.
+These can be manually installed, or automatically installed and validated with
+the `setup.sh` and `validate.sh` scripts in `scripts/devenv`.

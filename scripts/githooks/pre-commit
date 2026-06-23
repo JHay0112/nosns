@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# ------------------------------------------------------------------------------
+# nosns pre-commit git hook
+#
+# Author: J. L. Hay
+# ------------------------------------------------------------------------------
+
+# Format all changed Zig files
+ZIG_FILES=$(git diff --cached --name-only --diff-filter=ACMR | grep '\.zig$' || true)
+
+if [ ! -z "${ZIG_FILES}" ];
+then
+    echo "${ZIG_FILES}" | xargs zig fmt
+fi
+
+exit 0
