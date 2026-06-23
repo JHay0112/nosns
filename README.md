@@ -1,6 +1,6 @@
 # nosns
 
-nosns is a no-nonsense note taking application. It's prime goal is to make
+nosns is a no-nonsense note taking application. Its primary goal is to make
 note taking simple and to let the user to think about nothing other than
 writing and structuring their notes.
 
@@ -26,3 +26,5 @@ With all that said and done, what ~~does~~ do I plan for nosns to do:
  8. View the backlog and organise into hierarchical topics (directories)
  9. Tie into a version control system
 
+nosns uses Zig as its primary programming language. Check `build.zig.zon` for
+the version used in development.
