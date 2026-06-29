@@ -23,7 +23,6 @@ const ValidationError = error{
 /// `ValidiationError` if the repository is in anyway invalid. If `dir_path` is
 /// a relative path, it will be taken from the current working directory.
 pub fn validateRepository(io: std.Io, dir_path: []const u8) ValidationError!void {
-
     const dir_options: std.Io.Dir.OpenOptions = .{
         .access_sub_paths = true,
         .iterate = false,

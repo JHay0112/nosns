@@ -11,8 +11,8 @@ ZIG_FILES=$(git diff --cached --name-only --diff-filter=ACMR | grep '\.zig$' || 
 
 if [ ! -z "${ZIG_FILES}" ];
 then
-    echo "${ZIG_FILES}" | xargs zig fmt
-    git add "${ZIG_FILES}"
+    echo ${ZIG_FILES} | xargs zig fmt
+    git add ${ZIG_FILES}
 fi
 
 exit 0
