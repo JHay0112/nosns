@@ -10,6 +10,4 @@ const nosns = @import("repoman");
 
 // -----------------------------------------------------------------------------
 
-pub fn main(init: std.process.Init) !void {
-
-}
+pub fn main() !void {}
